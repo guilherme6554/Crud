@@ -3,13 +3,13 @@ const read = require('fs').readFileSync
 
 
 
-
-
 function Listar (){
     let v = read("bancodedados.csv", {encoding: "utf-8"})
+
+    let p = input("digite o id do aluno : ")
     
-    let x = v.split("\n") 
-    
+    let x = v.split("\n")
+
     var i = 1 
 
          while(i<x.length-1){
@@ -18,11 +18,19 @@ function Listar (){
        let  z = x[i]
 
       let b = z.split(";")
+   
+      if(p==b[0]){
+    console.log('digite novos valores')
      
-          //   console.log(b)
-          
-          console.log("\n","id:",b[0], "\n", "nome:",b[1], '\n','matricula:',b[2],"\n",'idade:',b[3], "\n", 'nota:',b[4]
-          )
+     b[1]=   input("novo nome :")
+     b[2] =   input("nova matricula :")
+     b[3] =    input("nova idade : ")
+     b[4] =    input("nova nota :")
+      }
+    
+
+      
+
         }
 
          }

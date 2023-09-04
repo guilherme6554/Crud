@@ -4,8 +4,10 @@ const read = require('fs').readFileSync
 
 
 
-
 function Listar (){
+
+  let p = input("digite o id do aluno : ")
+ let controle = 0 
     let v = read("bancodedados.csv", {encoding: "utf-8"})
     
     let x = v.split("\n") 
@@ -19,12 +21,17 @@ function Listar (){
 
       let b = z.split(";")
      
-          //   console.log(b)
-          
-          console.log("\n","id:",b[0], "\n", "nome:",b[1], '\n','matricula:',b[2],"\n",'idade:',b[3], "\n", 'nota:',b[4]
-          )
-        }
+      if(p==b[0]){
+                 
+          console.log("\n","id:",b[0], "\n", "nome:",b[1], '\n','matricula:',b[2],"\n",'idade:',b[3], "\n", 'nota:',b[4])
+      controle++  }
+      
 
          }
+if(controle==0){
+  console.log("aluno não encontrado")
+}
+    
+}
 
-         Listar()
+Listar()
