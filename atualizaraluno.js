@@ -1,9 +1,14 @@
 const input = require('readline-sync').question;
 const read = require('fs').readFileSync
-
+const at = require('fs')
 
 
 function Listar (){
+
+   let controle = 1
+
+  let q =  at.readFileSync("bancodedados.csv", {encoding: "utf-8"})
+
     let v = read("bancodedados.csv", {encoding: "utf-8"})
 
     let p = input("digite o id do aluno : ")
@@ -26,13 +31,21 @@ function Listar (){
      b[2] =   input("nova matricula :")
      b[3] =    input("nova idade : ")
      b[4] =    input("nova nota :")
-      }
+     
+    b= b.join(';')
+     
+    x[i] = b 
     
-
-      
+    x = x.join('\n')
+    
+      at.writeFileSync("bancodedados.csv", x,{flag:"w"})
+break
+      }
 
         }
-
+        if(controle==0){
+          console.log("aluno não encontrado")
+        }
          }
 
          Listar()

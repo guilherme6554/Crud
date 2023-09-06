@@ -7,7 +7,8 @@ const read = require('fs').readFileSync
 function Listar (){
 
   let p = input("digite o id do aluno : ")
- let controle = 0 
+ let controle = 1
+ 
     let v = read("bancodedados.csv", {encoding: "utf-8"})
     
     let x = v.split("\n") 
