@@ -27,4 +27,4 @@ function Listar (){
 
          }
 
-         Listar()
+         exports.Listar = Listar

@@ -3,7 +3,7 @@ const read = require('fs').readFileSync
 const at = require('fs')
 
 
-function Listar (){
+function atualizar (){
 
    let controle = 1
 
@@ -48,4 +48,4 @@ break
         }
          }
 
-         Listar()
+         exports.atualizar =atualizar

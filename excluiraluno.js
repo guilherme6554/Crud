@@ -43,4 +43,4 @@ break
         }
          }
 
-         excluir()
+         exports.excluir=excluir

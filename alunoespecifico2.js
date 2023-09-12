@@ -4,7 +4,7 @@ const read = require('fs').readFileSync
 
 
 
-function Listar (){
+function especifico(){
 
   let p = input("digite o id do aluno : ")
  let controle = 1
@@ -35,4 +35,4 @@ if(controle==0){
     
 }
 
-Listar()
+exports.especifico = especifico 

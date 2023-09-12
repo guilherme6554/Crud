@@ -32,4 +32,4 @@ function media(){
        
          
 
-         media()
+         exports.media = media 

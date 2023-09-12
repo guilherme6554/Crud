@@ -37,7 +37,7 @@ function Cadastro(){
 //     gg.writeFileSync("bancodedados.csv", d, {flag:"a"})
 }
 
-Cadastro()
+exports.Cadastro=Cadastro
 
 
 
