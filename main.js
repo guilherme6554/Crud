@@ -8,7 +8,7 @@ const Listar = require("./listaralunos.js").Listar
 
 function main (){
 let x = -1
-    while(x<0||x>6){
+    while(true){
     
   x =menu()
 
@@ -38,7 +38,8 @@ let x = -1
     }
     
     if(x==6){
-        media()
+  console.log(media())
+    
     }
 }
 

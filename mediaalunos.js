@@ -22,12 +22,12 @@ function media(){
       
       let b = z.split(";")
       
-       w += parseFloat(b[4])
-      console.log(w)
-      
+      w += parseFloat(b[4])
     }
+      
+      
  let  t = w /parseFloat(x.length-2)
- console.log (t)
+ return t
         }
        
          
