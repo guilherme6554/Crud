@@ -7,7 +7,7 @@ const read = require('fs').readFileSync
 function especifico(){
 
   let p = input("digite o id do aluno : ")
- let controle = 1
+ let controle = 0
  
     let v = read("bancodedados.csv", {encoding: "utf-8"})
     

@@ -1,6 +1,6 @@
 const input = require('readline-sync').question;
 
-function menu (){
+function menu(){
     
     let o = -1  
 
@@ -16,23 +16,16 @@ function menu (){
     console.log('4-Atualizar aluno')
     console.log('5-excluir aluno')
     console.log('6-média ')
-    console.log('7- main')
+    // console.log('7- main')
     console.log('0-sair')
     
     
     o = input('opcao:')
 }
 
+return o  
         
         }
     
-
-
-        
-    
-
-
-
-
 
 exports.menu = menu

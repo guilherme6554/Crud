@@ -3,9 +3,9 @@ const read = require('fs').readFileSync
 const at = require('fs')
 
 
-function excluir (){
+function excluir(){
 
-   let controle = 1
+   let controle = 0
 
   let q =  at.readFileSync("bancodedados.csv", {encoding: "utf-8"})
 
@@ -26,7 +26,7 @@ function excluir (){
    
       if(p==b[0]){
 
-        
+        controle++
     b= b.join()
      
     x.splice(i,1)

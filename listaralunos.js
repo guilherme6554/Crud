@@ -5,9 +5,9 @@ const read = require('fs').readFileSync
 
 
 
-function Listar (){
+function Listar(){
     let v = read("bancodedados.csv", {encoding: "utf-8"})
-    
+    let controle = 1
     let x = v.split("\n") 
     
     var i = 1 
@@ -24,7 +24,9 @@ function Listar (){
           console.log("\n","id:",b[0], "\n", "nome:",b[1], '\n','matricula:',b[2],"\n",'idade:',b[3], "\n", 'nota:',b[4]
           )
         }
-
+            if(controle==0){
+              console.log('aluno não encontrado')
+            }
          }
 
-         exports.Listar = Listar
+         exports.Listar=Listar

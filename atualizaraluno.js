@@ -3,9 +3,9 @@ const read = require('fs').readFileSync
 const at = require('fs')
 
 
-function atualizar (){
+function atualizar(){
 
-   let controle = 1
+   let controle = 0
 
   let q =  at.readFileSync("bancodedados.csv", {encoding: "utf-8"})
 
@@ -25,6 +25,7 @@ function atualizar (){
       let b = z.split(";")
    
       if(p==b[0]){
+        controle++
     console.log('digite novos valores')
      
      b[1]=   input("novo nome :")
